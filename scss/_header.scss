@@ -1,0 +1,32 @@
+.navbar{
+    background-color: wheat;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav__logo{
+        height: 100%;
+        
+        .logo__style{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .nav__items{
+        position: relative;
+        .nav__style{
+            padding: 15px;
+            margin:15px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .nav__style:hover{
+            color:blue;
+        }
+    }
+    .nav__toggle{
+        display: none;
+    }
+}
