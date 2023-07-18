@@ -42,13 +42,12 @@ function goToSlide(i) {
 function cambiarImagenSiguiente() {
     actual = (actual + 1) % imagenes.length;
     mostrarImagen();
-    goToSlide(actual)
+    
 }
 
 function cambiarImagenAnterior() {
     actual = (actual - 1 + imagenes.length) % imagenes.length;
     mostrarImagen();
-    goToSlide(actual)
 }
 
 atras.addEventListener('click', cambiarImagenAnterior);

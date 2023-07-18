@@ -40,9 +40,12 @@
 .navbar {
   background-color: wheat;
   height: 80px;
+  width: 100%;
   display: flex;
+  position: absolute;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 .navbar .nav__logo {
   height: 100%;
@@ -68,6 +71,51 @@
   display: none;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  background-color: red;
+}
+footer input {
+  margin: 20px;
+  border-bottom: black solid 2px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  background-color: red;
+  border-radius: 5px;
+}
+footer textarea {
+  margin: 20px;
+  border: black solid 2px;
+  outline: none;
+  background-color: red;
+}
+footer .final {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+footer .final .img__redes {
+  text-align: center;
+  height: 50%;
+  width: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+footer .final .final__p {
+  text-align: center;
+  color: red;
+}
+
 .contenedor__carrusel {
   display: flex;
   flex-direction: column;
@@ -76,6 +124,7 @@
   overflow: hidden;
   transition: transform 0.5s ease;
   height: 100%;
+  z-index: 20;
 }
 .contenedor__carrusel .carrusel {
   display: flex;

@@ -6,6 +6,7 @@
     overflow:hidden;
     transition: transform 0.5s ease;
     height: 100%;
+    z-index: 20;
     .carrusel{
         display: flex;
         align-items: center;
